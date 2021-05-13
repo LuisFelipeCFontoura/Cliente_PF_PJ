@@ -12,12 +12,12 @@ public abstract class Cliente {
     
     protected String nome;
     protected String endereco;
-    protected int telefone;
+    protected String telefone;
     protected double quantidade;
 
     public Cliente() {   }
 
-    public Cliente(String nome, String endereco, int telefone) {
+    public Cliente(String nome, String endereco, String telefone) {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
@@ -54,16 +54,18 @@ public abstract class Cliente {
     /**
      * @return the telefone
      */
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
     /**
      * @param telefone the telefone to set
      */
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+    //public abstract void cadastrar();
+    //public abstract void imprimir();
     
     public String getInfo(){
         return "{ 'nome': '" + nome 
