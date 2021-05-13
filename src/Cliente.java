@@ -64,9 +64,7 @@ public abstract class Cliente {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-    //public abstract void cadastrar();
-    //public abstract void imprimir();
-    
+      
     public String getInfo(){
         return "{ 'nome': '" + nome 
                + "' , 'endereco': " + endereco

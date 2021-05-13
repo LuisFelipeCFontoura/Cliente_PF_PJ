@@ -38,28 +38,22 @@ public class TesteCliente {
                 case "1":
                     PessoaFisica pf = new PessoaFisica();
                     
-                    String nome = JOptionPane.showInputDialog("Cliente Pessoa Fisica ");
-                    
-                    pf.setNome(nome);
-                    
+                    String nome = JOptionPane.showInputDialog("Cliente Pessoa Fisica ");                    
+                    pf.setNome(nome);                 
                     
                     
                     String endereco = JOptionPane.showInputDialog("Endereço de " + nome);
                     endereco = endereco.replace(",", ".");
-                    pf.setEndereco(endereco);
-                    
-                   
-                    
+                    pf.setEndereco(endereco);                    
+                                   
                     String telefone = JOptionPane.showInputDialog("Telefone de " + nome );
                     telefone = telefone.replace(",", ".");
-                    pf.setTelefone(telefone);
-                   
+                    pf.setTelefone(telefone);                  
                    
                     
                     String cpf = JOptionPane.showInputDialog("CPF de " + nome);
-                   cpf = cpf.replace(",", ".");
-                    pf.setCpf(cpf);
-                                                            
+                    cpf = cpf.replace(",", ".");
+                    pf.setCpf(cpf);                                                           
                     
                     listaPessoaFisica.add( pf );
                     
@@ -68,21 +62,14 @@ public class TesteCliente {
                     case "2":
                     
                     PessoaJuridica pj = new PessoaJuridica();
-                    String nomePJ = JOptionPane.showInputDialog("Cliente Pessoa Juridica ");
-                    
-                   
+                    String nomePJ = JOptionPane.showInputDialog("Cliente Pessoa Juridica ");        
                     pj.setNome(nomePJ);
                     
-                    
-                    String enderecoPJ = JOptionPane.showInputDialog("Endereço de " + nomePJ);
-                   
-                    
+                    String enderecoPJ = JOptionPane.showInputDialog("Endereço de " + nomePJ);            
                     pj.setEndereco(enderecoPJ);
                    
                     
-                    String telefonePJ = JOptionPane.showInputDialog("Telefone de " + nomePJ );
-                    
-                    
+                    String telefonePJ = JOptionPane.showInputDialog("Telefone de " + nomePJ );               
                     pj.setTelefone(telefonePJ);
                     
                     
@@ -104,8 +91,7 @@ public class TesteCliente {
                      }
                             
                 if(listaPessoaFisica instanceof PessoaFisica)
-                    ((PessoaFisica) listaPessoaFisica).getInfo();
-                    
+                    ((PessoaFisica) listaPessoaFisica).getInfo();                   
                     
                 else
                     
@@ -115,18 +101,15 @@ public class TesteCliente {
                             
                 if(listaPessoaJuridica instanceof PessoaJuridica)
                     ((PessoaJuridica) listaPessoaJuridica).getInfo();
-                    
-                    
-                JOptionPane.showMessageDialog(null, conteudo);
-                  
-        
+                                        
+                JOptionPane.showMessageDialog(null, conteudo);                        
                   
                     break;
+                    
                     case "4":
                     int posicao = Integer.valueOf(  JOptionPane.showInputDialog("Informe a posição que deseja remover:")  );
                     listaPessoaFisica.remove(posicao -1 );
-                    JOptionPane.showMessageDialog(null, "Cliente removido da posição: " + posicao);
-                    
+                    JOptionPane.showMessageDialog(null, "Cliente removido da posição: " + posicao);                   
                         
                     break;
                     
@@ -134,18 +117,17 @@ public class TesteCliente {
                     int posicaoPJ = Integer.valueOf(  JOptionPane.showInputDialog("Informe a posição que deseja remover:")  );
                     
                          listaPessoaJuridica.remove(posicaoPJ -1 );
-                         JOptionPane.showMessageDialog(null, "Cliente removido da posição: " + posicaoPJ);
-                    
+                         JOptionPane.showMessageDialog(null, "Cliente removido da posição: " + posicaoPJ);                    
                     
                      break;
+                     
                 case "n":
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opção incorreta");
                     
             }
-        }
-       
+        }     
        
        
     }

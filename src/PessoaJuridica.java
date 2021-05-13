@@ -38,22 +38,10 @@ public class PessoaJuridica extends Cliente {
         this.cnpj = cnpj;
     }
     
-    /*@Override
-    public void cadastrar(){
-        
-    }
-    @Override
-    public void imprimir(){
-        System.out.println("Nome: " + getNome() + "\nCPF: " + this.getCnpj() + "\nEndereço: " + getEndereco() +
-                            "\nTelefone: " + getTelefone()); 
-    }*/
+    
     @Override
     public  String getInfo(){
-        System.out.println("---- Dados do Desktop ----");
-       /*System.out.println("Modelo: " + this.getModelo());
-        System.out.println("Cor: " + this.getCor());
-        System.out.println("Preço: " + this.getPreco());
-        System.out.println("Potência da Fonte: " + this.getPotenciaFte());*/
+        
        return "{ 'Nome': '" + nome 
                + "' , 'Endereco': " + endereco 
                + " , 'Telefone': " + telefone
